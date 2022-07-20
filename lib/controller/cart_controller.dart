@@ -17,6 +17,7 @@ class CartController extends GetxController {
   void addItem(Products product, int quantity) {
     var totalQuantity = 0;
     if (_items.containsKey(product.id)) {
+      // update the model
       _items.update(product.id!, (value) {
         totalQuantity = value.quantity! + quantity;
         return CartModel(
@@ -29,12 +30,13 @@ class CartController extends GetxController {
           time: DateTime.now().toString(),
         );
       });
-
+      // remove the product from the _item if is <= 0
       if (totalQuantity <= 0) {
         _items.remove(product.id);
       }
     } else {
       if (quantity > 0) {
+        // add item in the model
         _items.putIfAbsent(
           product.id!,
           () {

@@ -1,4 +1,3 @@
-
 import 'package:Food_Delivery_App/controller/cart_controller.dart';
 import 'package:Food_Delivery_App/models/products_model.dart';
 import 'package:Food_Delivery_App/utils/colors.dart';
@@ -78,10 +77,8 @@ class PopularProductController extends GetxController {
     _cart = cartController;
     var exist = false;
     exist = _cart.existInCart(product);
-    print(' Is Exist ' + exist.toString());
     if (exist) {
       _inCartItems = _cart.getQuantity(product);
-      print('The Quantity In The Cart Is  ' + _inCartItems.toString());
     }
   }
 
