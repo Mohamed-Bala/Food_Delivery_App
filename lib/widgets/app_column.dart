@@ -1,8 +1,9 @@
-import 'package:e_commerce_app/utils/colors.dart';
-import 'package:e_commerce_app/utils/dimension.dart';
-import 'package:e_commerce_app/widgets/big_text.dart';
-import 'package:e_commerce_app/widgets/icon_and_text.dart';
-import 'package:e_commerce_app/widgets/small_text.dart';
+
+import 'package:Food_Delivery_App/utils/colors.dart';
+import 'package:Food_Delivery_App/utils/dimension.dart';
+import 'package:Food_Delivery_App/widgets/big_text.dart';
+import 'package:Food_Delivery_App/widgets/icon_and_text.dart';
+import 'package:Food_Delivery_App/widgets/small_text.dart';
 import 'package:flutter/material.dart';
 
 class AppColumn extends StatelessWidget {

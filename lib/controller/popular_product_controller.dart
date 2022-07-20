@@ -1,6 +1,7 @@
-import 'package:e_commerce_app/controller/cart_controller.dart';
-import 'package:e_commerce_app/models/products_model.dart';
-import 'package:e_commerce_app/utils/colors.dart';
+
+import 'package:Food_Delivery_App/controller/cart_controller.dart';
+import 'package:Food_Delivery_App/models/products_model.dart';
+import 'package:Food_Delivery_App/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

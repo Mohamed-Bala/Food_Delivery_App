@@ -1,7 +1,8 @@
-import 'package:e_commerce_app/data/repository/cart_repo.dart';
-import 'package:e_commerce_app/models/cart_model.dart';
-import 'package:e_commerce_app/models/products_model.dart';
-import 'package:e_commerce_app/utils/colors.dart';
+
+import 'package:Food_Delivery_App/data/repository/cart_repo.dart';
+import 'package:Food_Delivery_App/models/cart_model.dart';
+import 'package:Food_Delivery_App/models/products_model.dart';
+import 'package:Food_Delivery_App/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

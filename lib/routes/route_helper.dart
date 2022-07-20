@@ -1,8 +1,7 @@
-import 'package:e_commerce_app/pages/cart/cart_page.dart';
-import 'package:e_commerce_app/pages/food_detail/food_detail.dart';
-import 'package:e_commerce_app/pages/home/main_food_page.dart';
+import 'package:Food_Delivery_App/pages/cart/cart_page.dart';
+import 'package:Food_Delivery_App/pages/food_detail/food_detail.dart';
+import 'package:Food_Delivery_App/pages/home/main_food_page.dart';
 import 'package:get/get.dart';
-
 import '../pages/food_detail/recommened_food_detail.dart';
 
 class RouteHelper {

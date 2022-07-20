@@ -1,10 +1,11 @@
-import 'package:e_commerce_app/controller/cart_controller.dart';
-import 'package:e_commerce_app/data/repository/cart_repo.dart';
+
 import 'package:get/get.dart';
 
+import '../controller/cart_controller.dart';
 import '../controller/popular_product_controller.dart';
 import '../controller/recommended_product_controller.dart';
 import '../data/api/api_client.dart';
+import '../data/repository/cart_repo.dart';
 import '../data/repository/popular_product_repo.dart';
 import '../data/repository/recommended_product_repo.dart';
 import '../utils/constants.dart';

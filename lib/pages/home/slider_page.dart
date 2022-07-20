@@ -1,15 +1,15 @@
+import 'package:Food_Delivery_App/controller/popular_product_controller.dart';
+import 'package:Food_Delivery_App/controller/recommended_product_controller.dart';
+import 'package:Food_Delivery_App/models/products_model.dart';
+import 'package:Food_Delivery_App/routes/route_helper.dart';
+import 'package:Food_Delivery_App/utils/colors.dart';
+import 'package:Food_Delivery_App/utils/constants.dart';
+import 'package:Food_Delivery_App/utils/dimension.dart';
+import 'package:Food_Delivery_App/widgets/app_column.dart';
+import 'package:Food_Delivery_App/widgets/big_text.dart';
+import 'package:Food_Delivery_App/widgets/icon_and_text.dart';
 import 'package:dots_indicator/dots_indicator.dart';
-import 'package:e_commerce_app/controller/popular_product_controller.dart';
-import 'package:e_commerce_app/controller/recommended_product_controller.dart';
-import 'package:e_commerce_app/models/products_model.dart';
-import 'package:e_commerce_app/routes/route_helper.dart';
-import 'package:e_commerce_app/utils/colors.dart';
-import 'package:e_commerce_app/utils/constants.dart';
-import 'package:e_commerce_app/utils/dimension.dart';
-import 'package:e_commerce_app/widgets/app_column.dart';
-import 'package:e_commerce_app/widgets/big_text.dart';
-import 'package:e_commerce_app/widgets/icon_and_text.dart';
-import 'package:e_commerce_app/widgets/small_text.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

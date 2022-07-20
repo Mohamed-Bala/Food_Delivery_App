@@ -1,7 +1,7 @@
-import 'package:e_commerce_app/data/api/api_client.dart';
 import 'package:get/get.dart';
 
 import '../../utils/constants.dart';
+import '../api/api_client.dart';
 
 class PopularProductRepo extends GetxService {
   final ApiClient apiClient;
