@@ -1,4 +1,3 @@
-
 import 'package:Food_Delivery_App/data/repository/cart_repo.dart';
 import 'package:Food_Delivery_App/models/cart_model.dart';
 import 'package:Food_Delivery_App/models/products_model.dart';
@@ -28,6 +27,7 @@ class CartController extends GetxController {
           quantity: value.quantity! + quantity,
           isExist: true,
           time: DateTime.now().toString(),
+          product: product,
         );
       });
       // remove the product from the _item if is <= 0
@@ -52,6 +52,7 @@ class CartController extends GetxController {
               time: DateTime.now().toString(),
               quantity: quantity,
               isExist: true,
+              product: product,
             );
           },
         );
@@ -64,6 +65,7 @@ class CartController extends GetxController {
         );
       }
     }
+    update();
   }
 
 //______________________________________________________________________________
@@ -101,6 +103,14 @@ class CartController extends GetxController {
     return _items.entries.map((e) {
       return e.value;
     }).toList();
+  }
+//__________ Total _____________________________________________________________
+  int get totalAmount {
+    var total = 0;
+    _items.forEach((key, value) {
+      total += value.quantity! * value.price!;
+    });
+    return total;
   }
 //______________________________________________________________________________  
 }

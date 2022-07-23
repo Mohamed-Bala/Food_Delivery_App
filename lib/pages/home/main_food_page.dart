@@ -1,4 +1,3 @@
-
 import 'package:Food_Delivery_App/utils/colors.dart';
 import 'package:Food_Delivery_App/utils/dimension.dart';
 import 'package:Food_Delivery_App/widgets/big_text.dart';
@@ -40,17 +39,6 @@ class _MainFoodPageState extends State<MainFoodPage> {
                     children: [
                       BigText(
                         text: 'Sudan',
-                      ),
-                      Row(
-                        children: [
-                          SmallText(
-                            text: 'City',
-                          ),
-                          Icon(
-                            Icons.arrow_drop_down_rounded,
-                            size: Dimensions.iconSize24,
-                          ),
-                        ],
                       ),
                     ],
                   ),

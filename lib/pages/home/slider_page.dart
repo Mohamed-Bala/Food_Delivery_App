@@ -105,7 +105,7 @@ class _SliderPageState extends State<SliderPage> {
                     itemCount: controller.recommendedProductList.length,
                     itemBuilder: (context, index) => GestureDetector(
                       onTap: () {
-                        Get.toNamed(RouteHelper.getRecommendedFood(index));
+                        Get.toNamed(RouteHelper.getRecommendedFood(index,'home'));
                       },
                       child: Container(
                         margin: EdgeInsets.only(
@@ -249,7 +249,7 @@ class _SliderPageState extends State<SliderPage> {
 //____________ Image Item ______________________________________________________
           GestureDetector(
             onTap: () {
-              Get.toNamed(RouteHelper.getPopularFood(index));
+              Get.toNamed(RouteHelper.getPopularFood(index,'home'));
             },
             child: Container(
               height: Dimensions.imageContainer,

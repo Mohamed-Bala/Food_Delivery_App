@@ -1,4 +1,3 @@
-
 import 'package:Food_Delivery_App/controller/popular_product_controller.dart';
 import 'package:Food_Delivery_App/routes/route_helper.dart';
 import 'package:Food_Delivery_App/utils/colors.dart';
@@ -15,7 +14,8 @@ import '../../utils/constants.dart';
 
 class RecommendedFoodDetail extends StatelessWidget {
   final int pageId;
-  const RecommendedFoodDetail({Key? key, required this.pageId})
+  final String page;
+  const RecommendedFoodDetail({Key? key, required this.pageId, required this.page})
       : super(key: key);
 
   @override
@@ -36,7 +36,11 @@ class RecommendedFoodDetail extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
+                      if (page == 'cartpage') {
+                      Get.toNamed(RouteHelper.getCartPage());
+                    } else {
                       Get.toNamed(RouteHelper.getInitial());
+                    }
                     },
                     child: const AppIcon(icon: Icons.clear),
                   ),
