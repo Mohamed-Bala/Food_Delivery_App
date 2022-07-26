@@ -4,11 +4,7 @@ import 'package:get/get.dart';
 
 import 'controller/popular_product_controller.dart';
 import 'controller/recommended_product_controller.dart';
-import 'pages/food_detail/food_detail.dart';
-import 'pages/food_detail/recommened_food_detail.dart';
 import 'helper/dependencies.dart' as dep;
-import 'pages/home/main_food_page.dart';
-import 'utils/theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,13 +17,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Get.find<PopularProductController>().getPopularProduct();
-    Get.find<RecommendedProductController>().getRecommendedProduct();
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      initialRoute: RouteHelper.getInitial(),
-      getPages: RouteHelper.routes,
-    );
+    return GetBuilder<PopularProductController>(builder: (_) {
+      return GetBuilder<RecommendedProductController>(builder: (_) {
+        return GetMaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Flutter Demo',
+          initialRoute: RouteHelper.getSplash(),
+          getPages: RouteHelper.routes,
+        );
+      });
+    });
   }
 }
